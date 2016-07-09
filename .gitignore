@@ -1,0 +1,22 @@
+# ---> Idea
+.idea/
+build/
+classes/
+*.iml
+
+# ---> gradle
+.gradle/
+
+# ---> Java
+*.class
+
+logs/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
