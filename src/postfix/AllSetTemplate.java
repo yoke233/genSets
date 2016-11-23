@@ -33,7 +33,7 @@ public class AllSetTemplate extends PostfixTemplateWithExpressionSelector {
         try {
             String className = ((PsiExpression) expression).getType().getCanonicalText();
             PsiClass psiClass = JavaPsiFacade.getInstance(expression.getProject()).findClass(className, expression.getResolveScope());
-            List<PsiField> paramentFields = new CollectionListModel<PsiField>(psiClass.getFields()).getItems();
+            List<PsiField> paramentFields = new CollectionListModel<>(psiClass.getAllFields()).getItems();
             final String stringTemplate = getSetsText(expression.getText(), paramentFields) + "$END$";
             final Template template = manager.createTemplate("", "", stringTemplate);
             template.setToReformat(true);

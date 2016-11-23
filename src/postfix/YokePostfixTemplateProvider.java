@@ -12,7 +12,7 @@ public class YokePostfixTemplateProvider extends JavaPostfixTemplateProvider {
     private final Set<PostfixTemplate> templates;
 
     public YokePostfixTemplateProvider() {
-        templates = ContainerUtil.<PostfixTemplate>newHashSet(
+        templates = ContainerUtil.newHashSet(
                 new AllSetTemplate()
         );
     }

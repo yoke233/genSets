@@ -1,5 +1,8 @@
 public class Foo {
+  String bar;
+  int age;
   void m(Object o) {
-      TextUtils.isEmpty("test")
+      o.setBar();
+      o.setAge();
   }
 }
